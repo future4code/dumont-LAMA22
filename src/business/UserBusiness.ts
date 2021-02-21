@@ -56,7 +56,7 @@ export class UserBusiness {
             throw new CustomError(406,"Invalid Credentials")
         }
 
-        if(!user.email || user.password){
+        if(!user.email || !user.password){
             throw new CustomError(404,"Enter email and password")            
         }
 
